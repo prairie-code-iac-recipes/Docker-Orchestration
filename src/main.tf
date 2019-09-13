@@ -47,9 +47,9 @@ locals {
   gitlab_docker_ca_crt      = "TF_VAR_DOCKER_CA_CRT"
   gitlab_docker_client_crt  = "TF_VAR_DOCKER_CLIENT_CRT"
   gitlab_docker_client_key  = "TF_VAR_DOCKER_CLIENT_KEY"
-  gitlab_group_id           = 5532256
+  gitlab_group_id           = 0
   gitlab_group_name         = "prairie-code-iac-recipes"
-  group_tag                 = "Network Infrastructure"
+  group_tag                 = "Docker Infrastructure"
   primary_domain            = "iac-example.com"
   docker_instance_count     = 6
   docker_instance_type      = "t2.micro"
@@ -62,7 +62,6 @@ locals {
   starting_hostnum          = 10
   vpc_cidr_block            = "172.32.0.0/16"
   whitelist_cidrs           = [
-    "216.161.127.151/32",
     "${local.vpc_cidr_block}"
   ]
 }

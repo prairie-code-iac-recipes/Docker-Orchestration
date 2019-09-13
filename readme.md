@@ -43,4 +43,8 @@ This repository contains definitions that need to follow an organization's envir
 12. Saves Docker certificate information to a Gitlab group to allow other Docker application deployments to leverage them.
 
 ## Outputs
-None
+| Variable | Description |
+| -------- | ----------- |
+| DOCKER_CA_CRT | Public certificate for the Certificate Authority used to sign both the server and client keys used to secure the Docker socket. |
+| DOCKER_CLIENT_CRT | Public certificate used by clients to communicate to Docker Swarm over the Docker socket. |
+| DOCKER_CLIENT_KEY | Private key used by clients to communcate to Docker Swarm over the Docker socket. |
